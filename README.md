@@ -7,7 +7,7 @@ $mydb = new DBWrapper();
 $data = $mydb->readData('select * from users where id=:id', 5); // returns an array holding row data where user id = 5
 </pre>
 
-<a href="https://github.com/ravenlost/CorbeauPerdu/blob/master/PHP/Database/UsageExamples/DBWrapperUsageExamples.php">**See: DBWrapperUsageExamples.php**</a>
+<a href="https://github.com/ravenlost/PHP_DBWrapper/blob/master/UsageExamples/DBWrapperUsageExamples.php">**See: DBWrapperUsageExamples.php**</a>
 
 Constructor expects either to use DBWrapperConfig.php to get the database configuration, <br/>
 or to be passed all database configuration as arguments! Read the documentation!
