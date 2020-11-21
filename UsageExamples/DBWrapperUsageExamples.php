@@ -37,10 +37,10 @@ require_once ( 'DBWrapper.php' );
  *
  * // get MySQL warnings
  * $mydb->getMySQLWarnings();
- *
+ * 
  * // throw an exception when no data found on SQL Selects instead of returning NULL ?
  * $mydb->setThrowExOnNoData(bool)
- *
+ *  
  * DBWrapperException additional functions:
  *
  * $ex->getMessage()       // returns error message
@@ -143,9 +143,9 @@ try
   {
     // custom object code...
   }
-
+  
   $sql = "SELECT * FROM tbl_users where id = :id";
-
+  
   // either pass along new Object() into the fetchMode args, or pass it an already existing object to prefill
   $user = $mydb->readData($sql, 1, null, array ( PDO::FETCH_INTO, new User() ), false, true);
 
