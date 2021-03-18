@@ -1168,6 +1168,15 @@ class DBWrapper extends DBWrapperConfig
     $this->_throwExOnNoData = $throwExOnNoData;
     return $ov;
   }
+  
+  /******************************************************************************
+   * getThrowExOnNoData()
+   * @return boolean throw an exception when no data found on SQL Selects instead of returning NULL ?
+   ******************************************************************************/
+  public function getThrowExOnNoData()
+  {
+    return $this->_throwExOnNoData;
+  }
 
   /******************************************************************************
    * Returns metadata for a column in a result set
